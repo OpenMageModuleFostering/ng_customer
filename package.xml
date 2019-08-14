@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package>
     <name>ng_customer</name>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <stability>stable</stability>
     <license>MIT</license>
     <channel>community</channel>
     <extends/>
     <summary>This extension is related to add new link in my account left navigation bar and add its respective page.</summary>
-    <description>This extension is related to add new link in my account left navigation bar and add its respective page.</description>
-    <notes>First Release</notes>
-    <authors><author><name>NG</name><user>gargneeraj98</user><email>gargneeraj98@gmail.com</email></author></authors>
-    <date>2014-12-06</date>
-    <time>16:21:26</time>
-    <contents><target name="magecommunity"><dir name="NG"><dir name="Customer"><dir name="Helper"><file name="Data.php" hash="7e4137b3e38ef81c527a5da03982b592"/></dir><dir name="controllers"><file name="IndexController.php" hash="6204bfc42db6e2913c95fd44f0ee391f"/></dir><dir name="etc"><file name="adminhtml.xml" hash="aac5d5bd7f02b23d561fd3775702ae05"/><file name="config.xml" hash="095ca191150f6bdd98c67645eb2c06ee"/><file name="system.xml" hash="71e78ae61a42f4f857efccdb155fb870"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="ng_customer.xml" hash="00df09add768e9556d4432ab4c623a9d"/></dir><dir name="template"><dir name="Customer"><file name="link.phtml" hash="35905cc0abbad056ec78bd9124817c6b"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="NG_Customer.xml" hash="c0d9e8763a6504de4d034553f4d4b270"/></dir></target></contents>
+    <description>This extension is related to add new link in my account left navigation bar and add its respective page.It has ability to Enable and disable links in left navigation bar</description>
+    <notes>Added ability to enable/ disable my account links</notes>
+    <authors><author><name>NG</name><user>extensionsng</user><email>extensionsng@gmail.com</email></author></authors>
+    <date>2015-03-01</date>
+    <time>18:21:39</time>
+    <contents><target name="magecommunity"><dir name="NG"><dir name="Customer"><dir name="Block"><dir name="Account"><file name="Navigation.php" hash="5276c3563791f47ee939e500d139e3bd"/></dir><dir name="System"><dir name="Config"><file name="Label.php" hash="cd4a3c408fcfdf4bca0edae91727f667"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="5378f719e3cdb23eaff362dc3af1138a"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><file name="Yesno.php" hash="aeb0e125442e2e8511b26230513551fc"/></dir></dir></dir></dir><dir name="controllers"><file name="IndexController.php" hash="6204bfc42db6e2913c95fd44f0ee391f"/></dir><dir name="etc"><file name="adminhtml.xml" hash="aac5d5bd7f02b23d561fd3775702ae05"/><file name="config.xml" hash="a3100924249efdb444a71512578e8133"/><file name="system.xml" hash="2050404dcad81531da579d37f46f5ee7"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="ng_customer.xml" hash="558b64bb8b1457db83ab24060c1d2ce9"/></dir><dir name="template"><dir name="Customer"><file name="link.phtml" hash="35905cc0abbad056ec78bd9124817c6b"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="NG_Customer.xml" hash="c0d9e8763a6504de4d034553f4d4b270"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

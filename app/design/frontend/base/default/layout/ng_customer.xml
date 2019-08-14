@@ -19,7 +19,7 @@
 <layout>
     <customer_account>
         <reference name="customer_account_navigation">
-            <action method="addLink" ifconfig="ng_customer/link/enable">
+            <action method="addLink" ifconfig="ng_customer/ng_account_navigation/enable">
                 <name>custom_module_section</name>
                 <path>ng_customer/index/index</path>
                 <label helper="ng_customer/data/getLinkLabel" />
@@ -33,4 +33,50 @@
             <block type="core/template" name="ng_customer_content" template="Customer/link.phtml"/>            
         </reference>
     </ng_customer_index_index>
+    
+    <customer_account>
+        <reference name="customer_account_navigation">
+            <action method="removeLinkByName" ifconfig="ng_customer/ng_account_navigation/account_dashboard">
+                <name>account</name>
+            </action>
+            <action method="removeLinkByName" ifconfig="ng_customer/ng_account_navigation/account_information">
+                <name>account_edit</name>
+            </action>
+            <action method="removeLinkByName" ifconfig="ng_customer/ng_account_navigation/address_book">
+                <name>address_book</name>
+            </action>
+            <action method="removeLinkByName" ifconfig="ng_customer/ng_account_navigation/my_orders">
+                <name>orders</name>
+            </action>
+            <action method="removeLinkByName" ifconfig="ng_customer/ng_account_navigation/my_tags">
+                <name>tags</name>
+            </action>
+            <action method="removeLinkByName" ifconfig="ng_customer/ng_account_navigation/my_wishlist">
+                <name>wishlist</name>
+            </action>
+            <action method="removeLinkByName" ifconfig="ng_customer/ng_account_navigation/my_applications">
+                <name>OAuth Customer Tokens</name>
+            </action>
+            <action method="removeLinkByName" ifconfig="ng_customer/ng_account_navigation/recurring_profiles">
+                <name>recurring_profiles</name>
+            </action>
+            <action method="removeLinkByName" ifconfig="ng_customer/ng_account_navigation/billing_agreements">
+                <name>billing_agreements</name>
+            </action>
+            <action method="removeLinkByName" ifconfig="ng_customer/ng_account_navigation/my_downloadable_products">
+                <name>downloadable_products</name>
+            </action>
+            <action method="removeLinkByName" ifconfig="ng_customer/ng_account_navigation/my_product_reviews">
+                <name>reviews</name>
+            </action>
+            <action method="removeLinkByName" ifconfig="ng_customer/ng_account_navigation/newsletter_subscriptions">
+                <name>newsletter</name>
+            </action>
+            <action method="addLink" translate="label" module="ng_customer" ifconfig="ng_customer/ng_account_navigation/logout" after="-">
+                <name>logout</name>
+                <path>customer/account/logout</path>
+                <label>Log Out</label>
+            </action>
+        </reference>
+    </customer_account>
 </layout>

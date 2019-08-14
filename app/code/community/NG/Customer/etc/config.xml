@@ -47,5 +47,27 @@
                 <class>NG_Customer_Helper</class>
             </ng_customer>
         </helpers>        
+        <blocks>
+            <ng_customer>
+                <class>NG_Customer_Block</class>
+            </ng_customer>
+            <customer>
+                <rewrite>
+                    <account_navigation>NG_Customer_Block_Account_Navigation</account_navigation>
+                </rewrite>
+            </customer>            
+        </blocks>        
+        <models>
+            <ng_customer>
+                <class>NG_Customer_Model</class>
+            </ng_customer>
+        </models>        
     </global>    
+    <default>
+        <ng_customer>         
+            <ng_account_navigation>
+                <name>Test Link</name>
+            </ng_account_navigation>           
+        </ng_customer>
+    </default>
 </config>

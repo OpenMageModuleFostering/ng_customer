@@ -18,7 +18,7 @@
 class NG_Customer_Helper_Data extends Mage_Core_Helper_Abstract {
 
     public function getLinkLabel() {
-        return ucwords(Mage::getStoreConfig('ng_customer/link/name'));
+        return ucwords(Mage::getStoreConfig('ng_customer/ng_account_navigation/name'));
     }
 
 }

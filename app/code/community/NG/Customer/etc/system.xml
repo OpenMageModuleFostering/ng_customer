@@ -33,33 +33,160 @@
             <show_in_website>1</show_in_website>
             <show_in_store>1</show_in_store>
             <groups>
-                <link translate="label" module="ng_customer">
-                    <label>Settings</label>
+                <ng_account_navigation translate="label">
+                    <label>My Account Navigation</label>
                     <frontend_type>text</frontend_type>
-                    <sort_order>0</sort_order>
+                    <sort_order>40</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <enable translate="label">
-                            <label>Enable</label>
+                        <account_dashboard translate="label">
+                            <label>Account Dashboard</label>
                             <frontend_type>select</frontend_type>
-                            <source_model>adminhtml/system_config_source_yesno</source_model>                            
-                            <sort_order>1</sort_order>
+                            <source_model>ng_customer/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </enable>                                              
+                        </account_dashboard>
+                        <account_information translate="label">
+                            <label>Account Information</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ng_customer/system_config_source_yesno</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </account_information>
+                        <address_book translate="label">
+                            <label>Address Book</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ng_customer/system_config_source_yesno</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </address_book>
+                        <my_orders translate="label">
+                            <label>My Orders</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ng_customer/system_config_source_yesno</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </my_orders>
+                        <billing_agreements translate="label">
+                            <label>Billing Agreements</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ng_customer/system_config_source_yesno</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </billing_agreements>
+                        <recurring_profiles translate="label">
+                            <label>Recurring Profiles</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ng_customer/system_config_source_yesno</source_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </recurring_profiles>
+                        <my_product_reviews translate="label">
+                            <label>My Product Reviews</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ng_customer/system_config_source_yesno</source_model>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </my_product_reviews>
+                        <my_tags translate="label">
+                            <label>My Tags</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ng_customer/system_config_source_yesno</source_model>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </my_tags>
+                        <my_wishlist translate="label">
+                            <label>My Wishlist</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ng_customer/system_config_source_yesno</source_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </my_wishlist>
+                        <my_applications translate="label">
+                            <label>My Applications</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ng_customer/system_config_source_yesno</source_model>
+                            <sort_order>101</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </my_applications>
+                        <my_downloadable_products translate="label">
+                            <label>My Downloadable Products</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ng_customer/system_config_source_yesno</source_model>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </my_downloadable_products>
+                        <newsletter_subscriptions translate="label">
+                            <label>Newsletter Subscriptions</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ng_customer/system_config_source_yesno</source_model>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </newsletter_subscriptions>
+                        <add_link translate="label">
+                            <label>Add New Link</label>
+                            <frontend_model>ng_customer/system_config_label</frontend_model>
+                            <sort_order>130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                        </add_link>
+                        <enable translate="label">
+                            <label>Add New Link</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>                            
+                            <sort_order>140</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <tooltip><![CDATA[Select yes to add new link at the bottom of My Account Navigation.]]></tooltip>
+                        </enable>    
                         <name translate="label">
                             <label>Link Name</label>
                             <frontend_type>text</frontend_type>                            
-                            <sort_order>2</sort_order>
+                            <sort_order>150</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </name>                                              
+                            <tooltip><![CDATA[Entered name will add link "Test Link" at the bottom of My Account Navigation and corresponding page.]]></tooltip>
+                        </name>     
+                        <logout translate="label">
+                            <label>Add "Log Out"</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>160</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <tooltip><![CDATA[Enabling this option will add 'Log Out' link at the bottom of My Account Navigation.]]></tooltip>
+                        </logout>                        
                     </fields>
-                </link>
+                </ng_account_navigation>
             </groups>
         </ng_customer>
     </sections>
