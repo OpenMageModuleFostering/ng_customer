@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * NG_Customer extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       NG
+ * @package        NG_Customer
+ * @copyright      Copyright (c) 2014
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<layout>
+    <customer_account>
+        <reference name="customer_account_navigation">
+            <action method="addLink" ifconfig="ng_customer/link/enable">
+                <name>custom_module_section</name>
+                <path>ng_customer/index/index</path>
+                <label helper="ng_customer/data/getLinkLabel" />
+            </action>
+        </reference>
+    </customer_account>
+
+    <ng_customer_index_index>
+        <update handle="customer_account" />
+        <reference name="my.account.wrapper">
+            <block type="core/template" name="ng_customer_content" template="Customer/link.phtml"/>            
+        </reference>
+    </ng_customer_index_index>
+</layout>

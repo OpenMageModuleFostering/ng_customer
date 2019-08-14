@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!--
+/**
+* NG_Customer extension
+* 
+* NOTICE OF LICENSE
+* 
+* This source file is subject to the MIT License
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/mit-license.php
+* 
+* @category       NG
+* @package        NG_Customer
+* @copyright      Copyright (c) 2014
+* @license        http://opensource.org/licenses/mit-license.php MIT License
+*/-->
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <ng_customer translate="title" module="ng_customer">
+                                        <title>My Account Configuration</title>
+                                    </ng_customer>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                    <ng_customer translate="title" module="ng_customer">
+                        <title>My Account Configuration</title>
+                        <children>
+                            <link translate="title" module="ng_customer">
+                                <title>Link Name</title>
+                                <sort_order>0</sort_order>
+                            </link>
+                        </children>
+                    </ng_customer>
+                </children>
+            </admin>
+        </resources>
+    </acl>    
+</config>
