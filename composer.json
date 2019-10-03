@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/ng_customer",
+    "name": "OpenMageModuleFostering\/ng_customer",
     "type": "magento-module",
     "license": "MIT",
     "homepage": "",
     "description": "This extension is related to add new link in my account left navigation bar and add its respective page.",
     "authors": [
-    {
-        "name": "NG",
-        "email": "extensionsng@gmail.com"
-    }
-],
+        {
+            "name": "NG",
+            "email": "extensionsng@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
